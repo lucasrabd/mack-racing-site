@@ -1,0 +1,41 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilizando a barra de navegação */
+header {
+    background-color: #800000; /* Vermelho-vinho */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Itens na horizontal */
+    gap: 30px; /* Espaçamento entre itens */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a52a2a;
+    border-radius: 5px;
+}
