@@ -40,6 +40,9 @@ header h1 {
     text-transform: uppercase;
     font-size: 14px;
     transition: background 0.3s ease, transform 0.2s ease;
+    line-height: normal; /* Garante que o botão fique alinhado com os itens do menu */
+    display: inline-block; /* Faz o botão se comportar como um item de linha */
+    vertical-align: middle; /* Alinha verticalmente o botão com os itens do menu */
 }
 
 .cta-button:hover {
