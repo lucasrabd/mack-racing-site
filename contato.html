@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Mack Racing</title>
+    <title>Contato | Mack Racing</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="patrocinadores.html">Patrocinadores</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+
+    <header>
+        <div class="container">
+            <img src="assets/img/logo-negativo-ADAPTADO.png" alt="Mack Racing" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        <h1>Entre em Contato</h1>
-        <p>Mande um e-mail para a Mack Racing.</p>
-        <form>
-            <input type="email" placeholder="Seu e-mail">
-            <textarea placeholder="Sua mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <section class="contact-section">
+            <h2>Entre em Contato Conosco</h2>
+            <form action="mailto:contato@mackracing.com" method="post" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Mack Racing. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>

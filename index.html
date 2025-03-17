@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Mack Racing</title>
+    <title>Mack Racing | Página Inicial</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="patrocinadores.html">Patrocinadores</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+
+    <header>
+        <div class="container">
+            <img src="assets/img/logo-negativo-ADAPTADO.png" alt="Mack Racing" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        <h1>Bem-vindo à Mack Racing</h1>
-        <p>A equipe de corrida oficial do Mackenzie!</p>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Bem-vindo ao Mack Racing!</h1>
+            <p>A equipe que está conquistando o mundo da Fórmula SAE.</p>
+            <a href="contato.html" class="cta-button">Entre em contato</a>
+        </section>
+
+        <!-- Carrossel de Imagens (Patrocinadores ou Destaques) -->
+        <section class="carousel-section">
+            <h2>Nossos Patrocinadores e Parceiros</h2>
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="assets/img/patrocinador1.jpg" alt="Patrocinador 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/img/patrocinador2.jpg" alt="Patrocinador 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/img/patrocinador3.jpg" alt="Patrocinador 3">
+                </div>
+            </div>
+        </section>
+
+        <!-- História da equipe -->
+        <section class="history-section">
+            <h2>A História do Mack Racing</h2>
+            <p>
+                O Mack Racing é uma equipe universitária da Universidade Mackenzie, formada por estudantes apaixonados pela Fórmula SAE. Desde a sua fundação, a equipe tem se dedicado ao desenvolvimento de veículos de alto desempenho, participando de competições nacionais e internacionais. Embora ainda seja uma equipe em crescimento, nosso foco está no aprendizado contínuo, na superação de desafios e no aprimoramento das nossas habilidades, sempre com o objetivo de representar a excelência acadêmica e tecnológica.
+            </p>
+            <div class="cta-button-container">
+                <a href="sobre.html" class="cta-button">Saiba mais sobre nós</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; 2025 Mack Racing. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="assets/js/carousel.js"></script> <!-- Adiciona funcionalidade do carrossel -->
 </body>
 </html>

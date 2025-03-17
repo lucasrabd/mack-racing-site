@@ -1,0 +1,14 @@
+/* Seção de Patrocinadores */
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.sponsors-logos img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}

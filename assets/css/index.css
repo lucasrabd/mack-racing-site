@@ -1,0 +1,174 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantir que o corpo ocupe a altura total da tela */
+}
+
+/* Header */
+header {
+    background-color: #8B0000; /* Alterado para um tom mais elegante */
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Dourado para destacar */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(45deg, #8B0000, #800000);
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Centralizar o botão */
+.cta-button-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaço acima do botão */
+    margin-bottom: 50px; /* Espaço abaixo para não sobrepor o footer */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #FFA500; /* Laranja no botão */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+    min-width: 200px; /* Garantir que o botão tenha uma largura mínima */
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #FF4500; /* Cor mais forte ao passar o mouse */
+}
+
+/* Carrossel */
+.carousel-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.carousel-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* História da equipe */
+.history-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.history-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.history-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Garante que o footer vá para o final da página */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        min-width: 160px; /* Ajuste para telas menores */
+        font-size: 16px;
+    }
+}
