@@ -55,7 +55,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 80px 20px;
     background: linear-gradient(45deg, #8B0000, #800000);
-    color: white;
+    color: rgb(238, 238, 238);
 }
 
 .hero-section h1 {
