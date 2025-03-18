@@ -1,93 +1,65 @@
-/* Estrutura básica do site */
+/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
+/* Header Fixo com Transparência */
 header {
-    background-color: #5f0000; /* Cor vinho */
-    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background: rgba(139, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 15px 0;
+    z-index: 1000;
 }
 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Logo */
 .logo {
     height: 50px;
 }
 
+/* Menu de Navegação */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover,
+nav ul li a.active {
+    color: #FFD700;
+}
+
+/* Ajuste para conteúdo abaixo do header fixo */
+main {
+    padding-top: 80px;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #111;
+    color: #ddd;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.hero-section {
-    background: #8b0000;
-    color: white;
-    padding: 50px;
-    text-align: center;
-}
-
-.cta-button {
-    background-color: #f4f4f4;
-    color: #5f0000;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.cta-button:hover {
-    background-color: #dcdcdc;
-}
-
-.carousel-section {
-    margin: 30px 0;
-}
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.carousel-slide img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-.sponsors-logos img {
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-    margin-right: 20px;
+    padding: 20px;
 }
