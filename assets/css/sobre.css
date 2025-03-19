@@ -6,6 +6,12 @@ body {
     background-color: #f4f4f4;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Header */
 header {
     background-color: #8B0000; /* Tom de vermelho mais elegante */
@@ -111,6 +117,10 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: relative; /* Garante que o footer se ajuste ao conteúdo */
+    bottom: 0;
+    left: 0;
 }
 
 /* Responsividade */
@@ -138,7 +148,7 @@ footer {
 
     .story, .mission {
         width: 100%;
-        text-align: center;
+        text-align: flex;
         padding-left: 0;
         padding-right: 0;
     }
@@ -150,4 +160,10 @@ footer {
     p {
         font-size: 16px;
     }
+}
+
+/* Ajuste para o conteúdo ocupar toda a tela e empurrar o footer */
+main {
+    min-height: calc(100vh - 160px); /* Ajuste com base no tamanho do header + footer */
+    padding-bottom: 40px; /* Espaço adicional para o footer não sobrepor o conteúdo */
 }

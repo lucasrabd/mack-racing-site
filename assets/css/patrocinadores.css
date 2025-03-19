@@ -4,12 +4,26 @@
 .sponsors-section {
     text-align: center;
     margin: 50px 0;
+    padding: 20px; /* Adiciona um espaçamento interno */
 }
 
 .sponsors-section h2 {
     font-size: 36px;
-    color: #8B0000;
+    color: #8B0000; /* Cor vermelho escuro */
     margin-bottom: 30px;
+}
+
+.sponsors-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para ajustar os logos em múltiplas linhas se necessário */
+    gap: 30px; /* Espaço entre os logos */
 }
 
 .sponsor {
@@ -20,11 +34,29 @@
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garantir que nada ultrapasse os limites do bloco */
 }
 
 .sponsor img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Mantém a proporção da imagem */
     border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sponsors-section h2 {
+        font-size: 28px;
+    }
+
+    .sponsors-logos {
+        flex-direction: column; /* Alinha os logos verticalmente */
+        align-items: center; /* Centraliza os logos na tela */
+    }
+
+    .sponsor {
+        width: 150px; /* Diminui o tamanho dos logos em telas pequenas */
+        height: 80px;
+    }
 }
