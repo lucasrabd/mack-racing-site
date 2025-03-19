@@ -1,62 +1,160 @@
-/* patrocinadores.css */
-
-/* Exemplo de um layout para os patrocinadores */
-.sponsors-section {
-    text-align: center;
-    margin: 50px 0;
-    padding: 20px; /* Adiciona um espaçamento interno */
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.sponsors-section h2 {
-    font-size: 36px;
-    color: #8B0000; /* Cor vermelho escuro */
+/* Header */
+header {
+    background-color: #8B0000; /* Mantendo a cor vermelha */
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Dourado para destaque */
+}
+
+nav ul li a.active {
+    color: #FFD700; /* Destaque para o link ativo */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(45deg, #8B0000, #800000);
+    color: rgb(238, 238, 238);
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 24px;
     margin-bottom: 30px;
 }
 
-.sponsors-section p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
+/* Carrossel de Patrocinadores */
+.carousel-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-.sponsors-logos {
+.carousel-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.carousel {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Para ajustar os logos em múltiplas linhas se necessário */
-    gap: 30px; /* Espaço entre os logos */
+    overflow: hidden;
+    position: relative;
 }
 
-.sponsor {
-    margin: 20px;
-    display: inline-block;
-    width: 200px;
-    height: 100px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Garantir que nada ultrapasse os limites do bloco */
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
-.sponsor img {
+.carousel-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* Mantém a proporção da imagem */
-    border-radius: 8px;
+    height: auto;
+}
+
+/* Agradecimento aos Patrocinadores */
+.thank-you-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.thank-you-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.thank-you-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Garante que o footer vá para o final da página */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .sponsors-section h2 {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+    }
+
+    .carousel-section h2 {
         font-size: 28px;
     }
 
-    .sponsors-logos {
-        flex-direction: column; /* Alinha os logos verticalmente */
-        align-items: center; /* Centraliza os logos na tela */
+    .thank-you-section h2 {
+        font-size: 28px;
     }
 
-    .sponsor {
-        width: 150px; /* Diminui o tamanho dos logos em telas pequenas */
-        height: 80px;
+    .cta-button {
+        min-width: 160px; /* Ajuste para telas menores */
+        font-size: 16px;
     }
 }
